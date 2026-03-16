@@ -1,53 +1,88 @@
-# 🧞‍♀️ Medusa Chatbot
+# 🐍 Medusa — Ancient Beauty Oracle
 
-Medusa is an **AI-powered skincare and haircare assistant** built using **Streamlit** and **Google Gemini**.  
-It provides **personalized advice** in a **playful mythological persona**, mixing magical metaphors with **science-backed solutions**.
+> *"Shed the old skin. Embrace your radiance."*
+
+Medusa is an **AI-powered skincare & haircare assistant** built with **Streamlit** and **Google Gemini 1.5 Flash**. She responds as the mythological oracle reborn — blending ancient mystique with science-backed beauty advice.
 
 ---
 
 ## ✨ Features
 
-- 🧴 **Haircare & Skincare Guidance** — Get tips on managing your skin and hair health.
-- 🤖 **AI-Powered Conversations** — Uses **Google Gemini-1.5** for intelligent, contextual replies.
-- 🎭 **Playful Medusa Persona** — Responds with mystical metaphors and witty remarks.
-- 🌓 **Dark & Light Mode Themes** — Switch between two beautiful UI themes.
-- 🗨️ **Persistent Chat History** — Remembers your conversation within the session.
-- 🧹 **Clear Chat Option** — Start a fresh conversation anytime.
+| Feature | Description |
+|---|---|
+| 🐍 **Medusa Persona** | Playful mythological voice — wise, witty, never preachy |
+| 🧴 **Skincare Expertise** | Actives, routines, skin types, concerns, ingredient science |
+| 💇 **Haircare Wisdom** | Hair porosity, textures, damage repair, scalp health |
+| 🎭 **Mystique Slider** | Tune the oracle's personality from factual to full dramatic mode |
+| 🌓 **Dark / Light Mode** | Toggle between themes in the sidebar |
+| 💬 **Persistent Chat** | Full conversation history within your session |
+| ⚡ **Quick Topics** | Pre-built sidebar shortcuts for common questions |
+| 🗑️ **Clear Chat** | Start a fresh session anytime |
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend & UI** → [Streamlit](https://streamlit.io/)
-- **AI Model** → [Google Gemini 1.5 Flash](https://ai.google.dev/)
-- **Language** → Python 3.9+
-- **Libraries**:
-  - `streamlit`
-  - `google-generativeai`
-  - `Pillow`
-  - `python-dotenv`
+- **UI** — [Streamlit](https://streamlit.io/) with custom CSS (Cinzel + Lato fonts)
+- **AI** — [Google Gemini 1.5 Flash](https://ai.google.dev/) via `google-generativeai`
+- **Config** — `python-dotenv` for secure API key management
 
 ---
 
 ## 🚀 Getting Started
 
-### 1️⃣ Clone the Repository
+### 1. Clone the repo
 ```bash
-git clone https://github.com/krithiga-v/chatbot.git
-cd chatbot
-2️⃣ Install Dependencies
+git clone https://github.com/krithiga-v/medusa--chatbot.git
+cd medusa--chatbot
+```
 
-Use the requirements.txt file:
-
+### 2. Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
-3️⃣ Set Up Google Gemini API
+### 3. Set up your API key
+Create a `.env` file in the project root:
+```
+GOOGLE_API_KEY=your_google_gemini_api_key_here
+```
+Get your key: [Google AI Studio](https://aistudio.google.com/app/apikey)
 
-Get your Google Generative AI API Key → Get Key
-
-Create a .env file in the project root:
-
-GOOGLE_API_KEY=your_api_key_here
-
-4️⃣ Run the Chatbot
+### 4. Run the app
+```bash
 streamlit run Medusa.py
+```
+
+Open `http://localhost:8501` in your browser.
+
+---
+
+## 💡 Usage Tips
+
+- **Ask specific questions** — mention your skin type, hair texture, or specific concerns for tailored advice
+- **Use the Mystique Slider** to tune between factual responses and dramatic oracle mode
+- **Quick Topics** in the sidebar give instant access to common guides
+- **Suggestion chips** on the welcome screen help you get started fast
+
+---
+
+## ⚠️ Disclaimer
+
+Medusa is a beauty wellness assistant, not a medical professional. For serious skin or scalp conditions, please consult a licensed dermatologist.
+
+---
+
+## 📁 Project Structure
+
+```
+medusa--chatbot/
+├── Medusa.py          # Main Streamlit app
+├── requirements.txt   # Python dependencies
+├── .env               # API key (not committed — add to .gitignore)
+└── README.md
+```
+
+---
+
+*Built with 🐍 and a touch of ancient magic.*
